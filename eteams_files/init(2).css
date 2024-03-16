@@ -1,0 +1,58 @@
+.ui-m-browser-panel-header-bar .left-coms {
+  overflow: visible;  
+}
+.ui-m-browser-panel-header-bar-label {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ui-m-browser-panel-header-bar-left-label {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: initial;
+}
+/* 
+路径: /zy测试/修复人力浏览按钮头部标签字体超长样式问题/index.css(main)
+ID: 871548464801382405
+AppID: 871548464801382401
+*/
+.ui-upload-listT-item-simple.ui-upload-listT-item-hover .ui-upload-listT-item-span {
+  max-width: 100%;
+}
+/* 
+路径: /徐小平的ecode代码/解决附件列表宽度过窄导致附件名称显示异常的问题/style.css(main)
+ID: 927951366906871809
+AppID: 927951323917418497
+*/
+.ui-browser-associative-selected.selected-wrap .ui-browser-associative-selected-list .browser-list-template:last-child {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* 
+路径: /徐小平的ecode代码/解决流程浏览按钮已完成和已删除的流程不换行的问题/style.css(main)
+ID: 935667821170450433
+AppID: 935667782310141952
+*/
+.ebcom-newtab .ebcoms-tab-operations-wrap .ebcoms-header-btns {
+  z-index: unset;
+}
+/* 
+路径: /云商店公有登录页跳转(移动)/屏蔽选项卡zIndex样式/index.css(main)
+ID: 936606907175510021
+AppID: 936606907175510017
+*/
+.abc_th {
+  background-color: white!important;
+  color: var(--main-fc)!important;
+}
+/* 
+路径: /升级项目/自用系统eteams免登/style.css(main)
+ID: 955487974190891016
+AppID: 946617144439865345
+*/

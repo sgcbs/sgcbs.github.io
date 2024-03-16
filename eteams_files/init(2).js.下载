@@ -1,0 +1,2151 @@
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("874575386059980800", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "874575386059980800", "entry.js");
+
+        //sssss
+    "use strict";
+
+        return exports;
+      })
+    })();
+/* 
+路径: /测试/测试/entry.js(main)
+ID: 874575386059980805
+AppID: 874575386059980800
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("882251622021660673", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "882251622021660673", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    (0, _utils.regOvProps)('weappUi', 'TypesBrowser', function (props) {
+      if (props.id === 'syncObject' || props.id === 'defaultObject') {
+        props.options = mobx.toJS(props.options).filter(function (i) {
+          return i.id !== 'group';
+        });
+      }
+
+      return props;
+    });
+
+        return exports;
+      })
+    })();
+/* 
+路径: /浏览按钮群组菜单屏蔽/显示列定制同步设置屏蔽群组菜单/entry.js(main)
+ID: 882251622021660674
+AppID: 882251622021660673
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("885194181485584385", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "885194181485584385", "entry.js");
+
+        var _react = _interopRequireDefault(require("react"));
+
+    var _reactRouterDom = require("react-router-dom");
+
+    var _utils = require("@weapp/utils");
+
+    var _ecodesdk = require("@weapp/ecodesdk");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+    function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+    function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+    var _appInfo = (0, _utils.appInfo)('@weapp/ecodesdk'),
+        publicUrl = _appInfo.publicUrl,
+        libraryName = _appInfo.libraryName; // import {WdAll, BaseSetting, WdMobile, BaseMobile, TypeSetting, CardSetting, RuleSetting, GroupSetting, MenuSetting} from './exports'
+    // publicUrl 自动适配二级路径前缀变量
+    // libraryName 全局库名
+    // 设置页模块appid
+
+
+    var optionAppid = '885194245999091713';
+
+    var WdAll = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdAll/index');
+    });
+
+    var WdDone = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdDone/index');
+    });
+
+    var WdFollow = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdFollow/index');
+    });
+
+    var WdPending = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdPending/index');
+    });
+
+    var WdSubmit = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdSubmit/index');
+    });
+
+    var WdShare = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdShare/index');
+    });
+
+    var WdProxy = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdProxy/index');
+    });
+
+    var WdSaved = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdSaved/index');
+    }); // const OrderTmp = React.lazy(() => asyncImport('703464662063013888', 'pages/orderTemplate/index'));
+
+
+    var CommOption = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/commonOption/index');
+    });
+
+    var BaseSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/baseSetting/index');
+    }); // const WdMobile = React.lazy(() => asyncImport('704570890993410048', 'pages/workOrder/index'));
+    // const BaseMobile = React.lazy(() => asyncImport('704570890993410048', 'routes/base'));
+
+
+    var TypeSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/typeSetting/index');
+    });
+
+    var CardSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/cardSetting/index');
+    });
+
+    var RuleSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/ruleSetting/index');
+    });
+
+    var GroupSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/groupSetting/index');
+    }); // const MenuSetting = React.lazy(() => asyncImport('703464662063013888', 'pages/menuSetting/index'));
+
+
+    var CsRuleSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/customerRuleSetting/customerRule');
+    });
+
+    var ActionFlow = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/actionFlow/index');
+    });
+
+    var MainPage = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'routes/main');
+    });
+
+    var MyCustomer = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/myCustomer/index');
+    });
+
+    var Contract = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/Contract/index');
+    });
+
+    var Feedback = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/Feedback/index');
+    });
+
+    var ApproveSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/approveSetting/index');
+    });
+
+    var AlarmSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/alarmSetting/index');
+    });
+
+    var EBMenuSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/ebmenusetting/index');
+    });
+
+    var DetailPage = _react.default.lazy(function () {
+      (0, _utils.getLocale)('@weapp/customerservice');
+      return (0, _ecodesdk.asyncImport)('885194181485584385', 'pages/wdView/index');
+    });
+
+    var WxEnable = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/wxEnable/index');
+    });
+
+    var WxRuleSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/wxAfterInsert/index');
+    });
+
+    var CallSetting = _react.default.lazy(function () {
+      return (0, _ecodesdk.asyncImport)(optionAppid, 'pages/callSetting/index');
+    }); //appid:703356776736137216 设置模块中依赖文件： 
+
+    /* 
+      pages/groupSetting/index, 
+      pages/menuSetting/index, 
+      pages/approveSetting/index
+      pages/alarmSetting/index
+      pages/cardSetting/components/editList
+     */
+    // ebuilder前缀判断
+
+
+    var pathList = window.location.pathname.split('/');
+    var moduleEntryPath = 'customerservice/custom';
+    var pathName = window.location.pathname;
+    var lastPathList = [];
+
+    var _cloneDeep = function _cloneDeep(obj) {
+      var curObj = obj;
+      if (!curObj || _typeof(curObj) !== 'object') return;
+      var newObj = Array.isArray(curObj) ? [] : {};
+
+      for (var key in curObj) {
+        if (curObj.hasOwnProperty(key)) {
+          newObj[key] = _typeof(curObj[key]) === 'object' && curObj[key] !== null ? _cloneDeep(curObj[key]) : curObj[key];
+        }
+      }
+
+      return newObj;
+    }; // app loading times
+
+
+    var curEBRoot = '';
+
+    try {
+      // 是否外部链接
+      // const isExternalPath = pathList.filter((e : any) => e === 'customerservice').length > 1;
+      // const extenalPath = isExternalPath ? 'customerservice/cusapp_combination/' : ''
+      // curEBRoot = `${pathList.slice(1, pathList.findIndex((e:any) => e === "customerservice")).join('/')}/`;
+      // curEBRoot = curEBRoot === '/' ? extenalPath : `${curEBRoot}${extenalPath}`
+      var entryList = pathName.split(moduleEntryPath);
+      curEBRoot = entryList.length > 1 ? entryList[0].replace('/', '').replace('second/', '') : '';
+    } catch (err) {
+      console.log(err);
+    } // const curEBRoot = window.location.pathname.includes('cusapp') ? 'cusapp/' : '';
+    // 固定发版appId
+
+
+    var staticAppid = '703356776736137216'; // /sp/ecodesdk 是 E10 标准单页路径开头
+    // 建议将自己的注册路由都带上本应用的 appId 以防和其他开发冲突
+
+    var mainRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(MainPage, null)));
+
+    var wdAllRoot = // 待发布替换
+    // <Route path={`${publicUrl}/sp/custom/` + '885194181485584385/workorderall'}>
+    _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/workorderall")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdAll, null)));
+
+    var wdSavedRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/workordersaved")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdSaved, null)));
+
+    var wdAllCustomRoot = // 待发布替换
+    // <Route path={`${publicUrl}/sp/custom/` + '885194181485584385/workorderall'}>
+    _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/sp/custom/customerservice/") + "".concat(staticAppid, "/workorderall")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdAll, null)));
+
+    var wdDoneRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/workorderdone")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdDone, null)));
+
+    var wdAllFollow = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/workorderfollow")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdFollow, null)));
+
+    var wdPendingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/workorderpending")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdPending, null)));
+
+    var wdSubmitRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/workordersubmit")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdSubmit, null)));
+
+    var wdShareRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/workordershare")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdShare, null)));
+
+    var typesettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/typesetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(TypeSetting, null)));
+
+    var cardsettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/cardsetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(CardSetting, null)));
+
+    var rulesettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/rulesetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(RuleSetting, null)));
+
+    var basesettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/basesetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(BaseSetting, null))); // const mworkorderRoot = (
+    //     <Route path={`${publicUrl}/mobile/customerservice/custom/` + '885194181485584385/m/workorder'}>
+    //       <React.Suspense fallback= {() => { }}>
+    //         <WdMobile />
+    //       </React.Suspense>
+    //     </Route>
+    //     );
+    // const mRoot = (
+    //     <Route path={`${publicUrl}/mobile/customerservice/custom/` + '885194181485584385/m'}>
+    //       <React.Suspense fallback= {() => { }}>
+    //         <BaseMobile />
+    //     </React.Suspense>
+    //     </Route>
+    //     );
+
+
+    var groupsettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/groupsetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(GroupSetting, null))); // const menusettingRoot = (
+    //   <Route path={`${publicUrl}/customerservice/custom/` + `${staticAppid}/menusetting`}>
+    //       <React.Suspense fallback= {() => { }}>
+    //         <MenuSetting />
+    //     </React.Suspense>
+    //     </Route>);
+
+
+    var commOptionRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/commonoption")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(CommOption, null)));
+
+    var workorderProxyRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/workorderproxy")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WdProxy, null)));
+
+    var csRuleSettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/customerrulesetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(CsRuleSetting, null)));
+
+    var actionFlowRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/actionflow")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(ActionFlow, null)));
+
+    var myCustomerRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/customer")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(MyCustomer, null)));
+
+    var myContractRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/customer/contact/personal")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(Contract, null)));
+
+    var myFeedbackRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/crm/customer/external/feedback")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(Feedback, null)));
+
+    var approveSettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/approvesetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(ApproveSetting, null)));
+
+    var alarmSettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/alarmsetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(AlarmSetting, null)));
+
+    var ebmenuSettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/ebmenusetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(EBMenuSetting, null)));
+
+    var detailPageRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/sp/custom/customerservice/") + "".concat(staticAppid, "/view")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(DetailPage, null)));
+
+    var detailCardPageRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/sp/custom/customerservice/") + "".concat(staticAppid, "/workorderall/detailDialog")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(DetailPage, null)));
+
+    var wxEnableRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/wxenable")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WxEnable, null)));
+
+    var wxAfterInsertRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/wxafterinsert")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WxRuleSetting, null)));
+
+    var callSettingRoot = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom/") + "".concat(staticAppid, "/callsetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(CallSetting, null)));
+
+    var wxAfterInsertRootTest = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/sp/custom/customerservice/") + "".concat(staticAppid, "/wxafterinsert")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(WxRuleSetting, null)));
+
+    var callSettingRootTest = _react.default.createElement(_reactRouterDom.Route, {
+      path: "".concat(publicUrl, "/sp/custom/customerservice/") + "".concat(staticAppid, "/callsetting")
+    }, _react.default.createElement(_react.default.Suspense, {
+      fallback: function fallback() {}
+    }, _react.default.createElement(CallSetting, null)));
+
+    var customerEcodeRoots = _react.default.createElement(_reactRouterDom.BrowserRouter, null, wdAllCustomRoot);
+
+    var customerRoots = _react.default.createElement(_reactRouterDom.BrowserRouter, null, mainRoot, wdAllRoot, wdAllFollow, wdSavedRoot, wdPendingRoot, wdSubmitRoot, wdShareRoot, wdDoneRoot, typesettingRoot, cardsettingRoot, rulesettingRoot, basesettingRoot, groupsettingRoot, workorderProxyRoot, commOptionRoot, csRuleSettingRoot, actionFlowRoot, myCustomerRoot, myContractRoot, myFeedbackRoot, approveSettingRoot, alarmSettingRoot, ebmenuSettingRoot, wxEnableRoot, wxAfterInsertRoot); // const mCustomerRoots = (
+    //   <Router>
+    //     {mworkorderRoot}
+    //     {mRoot}
+    //   </Router>
+    // );
+    // 通过 props.chilren 为 Switch 注册 Route 子集，参照 react-router-dom 文档，不能注册其他类型子组件
+
+
+    var spCustomerRoots = _cloneDeep(customerRoots);
+
+    spCustomerRoots.props.children = spCustomerRoots.props.children.map(function (e) {
+      var changedUrl = e.props.path === '/customerservice' ? '/sp/custom/customerservice' : "".concat(e.props.path.replace('customerservice/custom', 'sp/custom/customerservice'));
+      e.props = _objectSpread({}, e.props, {
+        path: changedUrl
+      });
+      return _objectSpread({}, e);
+    });
+
+    function registerSPARoute(props, route) {
+      if (!props.children) {
+        props.children = [route];
+      } else if (_react.default.Children.count(props.children) === 1) {
+        props.children = [route, props.children];
+      } else {
+        props.children.push(route);
+      }
+    }
+
+    function refreshRoutesUrls() {
+      // ebuilder前缀判断
+      var pathList = window.location.pathname.split('/');
+      var moduleEntryPath = 'customerservice/custom';
+      var pathName = window.location.pathname; // app loading times
+
+      var curEBRoot = '';
+
+      try {
+        // 是否外部链接
+        var _entryList = pathName.split(moduleEntryPath);
+
+        curEBRoot = _entryList.length > 1 ? _entryList[0].replace('/', '') : '';
+        customerRoots.props.children = customerRoots.props.children.map(function (e) {
+          var changedUrl = e.props.path.split('customerservice/custom').length > 1 ? e.props.path.split('customerservice/custom')[1] : '';
+          e.props = _objectSpread({}, e.props, {
+            path: changedUrl !== '' ? "".concat(publicUrl, "/").concat(curEBRoot, "customerservice/custom").concat(changedUrl) : "".concat(publicUrl, "/").concat(curEBRoot, "customerservice")
+          });
+          return _objectSpread({}, e);
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    } // console.log(window.location)
+    // cutomerservice router 对接
+
+
+    window.isLoadedWeappCustomerRoot = false;
+    (0, _utils.regOvProps)('weappCustomerService', 'CustomerMainRouter', function (props) {
+      var curPathList = window.location.pathname.split('/'); // 客服模块再次打开客服模块不刷新初步解决方法
+
+      if (!window.location.pathname.includes('commonoption') && props.history.action === 'REPLACE' && window.isLoadedWeappCustomerRoot === true) {} // window.location.reload()
+      // fix 内部加载客服模块重新渲染
+
+
+      try {
+        if (curPathList.indexOf('cusapp_combination') !== -1 && lastPathList.indexOf('cusapp_combination') === -1 || curPathList.indexOf('cusapp_combination') === -1 && lastPathList.indexOf('cusapp_combination') !== -1) {
+          refreshRoutesUrls(); // window.location.reload();
+        } // if (props.history.action === 'PUSH' && props.history.location.pathname === '/customerservice' ) window.location.replace(`${window.location.origin}${window.location.pathname}`)
+
+      } catch (err) {
+        console.log(err);
+      } // if(props.history.action === 'PUSH') window.location.href = `${window.location.origin}${window.location.pathname}`
+      //  setTitle({ title: `${tenantName ?( '客服' + ' - ' + tenantName ) : '客服'}`});
+      //  registerSPARoute(props, customerRoots);
+
+
+      (0, _utils.regReactChildren)(props, customerRoots);
+      lastPathList = window.location.pathname.split('/');
+      return props;
+    }, 0); // ecodesdk 单页提供 Switch 组件进行拦截和子路由注册
+
+    if (window.location.pathname.includes('sp/customerservice/custom/703356776736137216/workorderall/detailDialog')) {
+      var paramId = window.location.pathname.split('detailDialog/')[1];
+      window.location.href = "/sp/custom/customerservice/703356776736137216/workorderall/detailDialog/".concat(paramId);
+    } // 单页路由注册----
+
+
+    (0, _utils.regOvProps)(libraryName, 'Switch', function (props) {
+      console.log(props);
+      var tenantName = undefined;
+
+      try {
+        tenantName = window.TEAMS.currentTenant.tenantName;
+      } catch (error) {}
+
+      (0, _utils.getLocale)('@weapp/customerservice');
+      window.location.pathname.includes('sp/custom/customerservice') && (0, _utils.setTitle)({
+        title: "".concat(tenantName ? '客服' + ' - ' + tenantName : '客服')
+      });
+      spCustomerRoots.props.children.forEach(function (e) {
+        (0, _utils.regReactChildren)(props, e);
+      });
+      (0, _utils.regReactChildren)(props, detailPageRoot);
+      (0, _utils.regReactChildren)(props, detailCardPageRoot);
+      (0, _utils.regReactChildren)(props, callSettingRootTest); // regReactChildren(props, spCustomerRoots);
+      //  registerSPARoute(props, customerEcodeRoots);
+      //  registerSPARoute(props,wdAllRoot);
+      //  registerSPARoute(props,typesettingRoot);
+      //  registerSPARoute(props,commOptionRoot);
+
+      return props;
+    }, -1); // ----
+    // window.navigation.addEventListener("navigate", function (event: NavigateEvent) {
+    //   console.log('navigationType', event.navigationType); // 导航类型： "reload", "push", "replace", or "traverse"
+    //   console.log('destination', event.destination); // 导航目标：{ url: '', index: '', getState() {} }
+    //   console.log('hashChange', event.hashChange); // 是否是锚点
+    //   console.log('canTransition', event.canTransition); // 是否可以拦截，即是否可以使用 transitionWhile
+    // });
+    // cutomerservice router 移动端对接
+    // regOvProps('weappCustomerService', 'MCustomerMainRouter', (props) => {
+    //      registerSPARoute(props, mCustomerRoots);
+    //   return props;
+    // }, 0);
+
+    /**
+     *  /
+     *  /sp/custom/703356776736137216/workorderall 全部工单
+     *  /sp/custom/703356776736137216/typesetting 类型设置
+     *  /sp/custom/703356776736137216/cardsetting 卡片设置
+     *  /sp/custom/703356776736137216/rulesetting 分配规则
+     *  /sp/custom/703356776736137216/basesetting 基础设置
+     * 
+     * **/
+
+        return exports;
+      })
+    })();
+/* 
+路径: /客服(pc)/客服-工单模块/entry.js(main)
+ID: 885194181485584401
+AppID: 885194181485584385
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("885200851569795072", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "885200851569795072", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    var _mobx = require("mobx");
+
+    // 需要展示的租户key
+    var openTks = ['t7akvdnf84', 'tvf19yci9u', 'tegiftfqhl', 't88lxi5idq', 'tblk436b28', 'thfnde9fvr', 'tbkqgwklpy', 'tydpoljw5d', 't5ochptgde'];
+    /**
+     * 判断当前租户是否要隐藏
+     */
+
+    var checkHasHide = function checkHasHide() {
+      var _window$TEAMS, _window$TEAMS$current;
+
+      if (openTks.includes((_window$TEAMS = window.TEAMS) === null || _window$TEAMS === void 0 ? void 0 : (_window$TEAMS$current = _window$TEAMS.currentTenant) === null || _window$TEAMS$current === void 0 ? void 0 : _window$TEAMS$current.tenantKey)) {
+        return false;
+      }
+
+      return true;
+    };
+
+    var flag1 = 0,
+        flag2 = 0;
+    (0, _utils.regOvProps)('weappLayout', 'AppDropMenusFrequent', function (props) {
+      if (!checkHasHide()) return props; // detail: "快速提交处理工单、方便快捷的给客户服务"
+      // icon: ""
+      // id: "50"
+      // menuId: "8515234334180228685"
+      // menuname: "客服"
+      // module: "customerservice"
+      // moduleLinkId: "8515234334180228686"
+      // path: "/customerservice"
+      // personal: false
+      // shortname: "客服"
+      // status: false
+
+      if (props.weId === "bgdcna_sc2opf_caf54a_hlezse_zxcr21") {
+        // 常用菜单中过滤 客服模块
+        props.data = props.data.filter(function (x) {
+          return x != '50';
+        });
+        var allMenu = (0, _mobx.toJS)(props.allAppMenusIdMap);
+        delete allMenu[50];
+      }
+
+      return props;
+    }); // 高级搜索的下拉框
+
+    (0, _utils.regOvProps)('weappUi', 'Select', function (props) {
+      if (!checkHasHide()) return props;
+
+      if (props.weId === '_c1k81h_griqrh_hdya7p_f17ut9_dwaw2121_bdogtl_tqgzzj_l46u1d_0im38r@otherGroup_98yaqr@0_htfv0m@customer_name_nf78ld@customer_name_n3fy0h_33m6b5') {
+        props.data = props.data.filter(function (x) {
+          return x.id !== 'customer_customerServicesPersonnels';
+        });
+      }
+
+      return props;
+    });
+    (0, _utils.regOvProps)('weappLayout', 'AppDropMenusContent', function (props) {
+      if (!checkHasHide()) return props; // 综合办公  "2223763746175704076" 下的menus 
+      // 客服模块id  50
+
+      var data = (0, _mobx.toJS)(props.data);
+
+      if (Array.isArray(data)) {
+        for (var i = 0; i < data.length; i++) {
+          var subData = (0, _mobx.toJS)(data[i].data);
+
+          if (Array.isArray(subData)) {
+            for (var j = 0; j < subData.length; j++) {
+              var menus = (0, _mobx.toJS)(subData[j].menus);
+
+              if (Array.isArray(menus)) {
+                // 过滤客服模块
+                menus = menus.filter(function (x) {
+                  return x.id != '50';
+                });
+                subData[j].menus = menus; // console.info('menus => ', menus);
+              }
+            } // data[i].data = subData;
+
+
+            data[i].data = subData.filter(function (e) {
+              return e.menus && e.menus.length > 0;
+            });
+          }
+        }
+      }
+
+      props.data = data; // console.info('data => ', data);
+
+      return props;
+    }); // 接口拦截，应用设置 屏蔽客服设置项
+
+    axios.interceptors.response.use(function (response) {
+      var config = response.config;
+      var data = config.data,
+          url = config.url;
+
+      if (!checkHasHide()) {
+        return response;
+      }
+
+      if (window.location.pathname.endsWith('/freepass')) {
+        return response;
+      }
+
+      function init() {}
+
+      try {
+        var _window$TEAMS2, _window$TEAMS3, _window$TEAMS3$isDisp, _window$TEAMS4, _window$TEAMS5, _window$TEAMS5$isPurc;
+
+        if (((_window$TEAMS2 = window.TEAMS) === null || _window$TEAMS2 === void 0 ? void 0 : _window$TEAMS2.isDisplayModule) && flag1 === 0 || ((_window$TEAMS3 = window.TEAMS) === null || _window$TEAMS3 === void 0 ? void 0 : (_window$TEAMS3$isDisp = _window$TEAMS3.isDisplayModule) === null || _window$TEAMS3$isDisp === void 0 ? void 0 : _window$TEAMS3$isDisp.call(_window$TEAMS3, 'customerservice'))) {
+          flag1++;
+          var orginDisplayFn = window.TEAMS.isDisplayModule;
+
+          window.TEAMS.isDisplayModule = function (key) {
+            if (key === 'customerservice') {
+              return false;
+            }
+
+            return orginDisplayFn(key);
+          };
+        }
+
+        if (((_window$TEAMS4 = window.TEAMS) === null || _window$TEAMS4 === void 0 ? void 0 : _window$TEAMS4.isPurchasedModule) && flag2 === 0 || ((_window$TEAMS5 = window.TEAMS) === null || _window$TEAMS5 === void 0 ? void 0 : (_window$TEAMS5$isPurc = _window$TEAMS5.isPurchasedModule) === null || _window$TEAMS5$isPurc === void 0 ? void 0 : _window$TEAMS5$isPurc.call(_window$TEAMS5, 'customerservice'))) {
+          flag2++;
+          var orginPurchasedFn = window.TEAMS.isPurchasedModule || init;
+
+          window.TEAMS.isPurchasedModule = function (key) {
+            if (key === 'customerservice') {
+              return false;
+            }
+
+            return orginPurchasedFn(key);
+          };
+        }
+
+        if (url.indexOf('/api/basicserver/menu/queryEmpMenus') >= 0) {
+          var empmenus = response.data.empmenus;
+
+          if (Array.isArray(empmenus)) {
+            response.data.empmenus = empmenus.filter(function (x) {
+              return x.id != '50';
+            });
+          }
+        }
+
+        if (url.indexOf('/api/crm/customer/getCreateDetailForm') >= 0) {
+          var _data = response.data.data;
+          var _data$formData = _data.formData,
+              items = _data$formData.items,
+              _data$formData$layout = _data$formData.layout,
+              layout = _data$formData$layout === void 0 ? [] : _data$formData$layout;
+
+          for (var i = 0; i < layout.length; i++) {
+            var sub = layout[i] || [];
+
+            for (var j = 0; j < sub.length; j++) {
+              if (sub[j].id === 'customerServicesPersonnels') {
+                sub[j].hide = true;
+              }
+
+              layout[i] = sub;
+            }
+          }
+
+          if (items['customerServicesPersonnels']) {
+            items['customerServicesPersonnels'].visible = false;
+          }
+
+          response.data.data.formData.items = items;
+          response.data.data.formData.layout = layout;
+          return response;
+        } // 移除客服权限项
+
+
+        if (url.indexOf('/api/bs/auth/role') >= 0 && url.indexOf('/functionPermissionTree') >= 0) {
+          var _data2 = response.data.data;
+          var weaTable = _data2.weaTable;
+          weaTable.data = weaTable.data.filter(function (x) {
+            return x.menuCode != 'customerservice';
+          });
+        } // 移除应用管理中的客服
+
+
+        if (url.indexOf('/api/baseserver/queryTenantApplicationList') >= 0) {
+          var _response$data$data = response.data.data,
+              _data3 = _response$data$data === void 0 ? [] : _response$data$data;
+
+          for (var _i = 0; _i < _data3.length; _i++) {
+            _data3[_i].menus = _data3[_i].menus.filter(function (x) {
+              return x.module != 'customerservice';
+            });
+          }
+        } // 过滤客服自定义列
+
+
+        if (url.indexOf('/api/crm/customColumn/getCustomColumnByUserId') >= 0) {
+          var _data4 = response.data.data;
+          var _data4$cusColumn = _data4.cusColumn,
+              cusColumn = _data4$cusColumn === void 0 ? [] : _data4$cusColumn,
+              _data4$defultCusColum = _data4.defultCusColumn,
+              defultCusColumn = _data4$defultCusColum === void 0 ? [] : _data4$defultCusColum,
+              _data4$defultSysColum = _data4.defultSysColumn,
+              defultSysColumn = _data4$defultSysColum === void 0 ? [] : _data4$defultSysColum,
+              _data4$sysColumn = _data4.sysColumn,
+              sysColumn = _data4$sysColumn === void 0 ? [] : _data4$sysColumn;
+          response.data.data.cusColumn = cusColumn.filter(function (x) {
+            return x.column != 'customerServicesPersonnels';
+          });
+          response.data.data.defultCusColumn = defultCusColumn.filter(function (x) {
+            return x.column != 'customerServicesPersonnels';
+          });
+          response.data.data.defultSysColumn = defultSysColumn.filter(function (x) {
+            return x.column != 'customerServicesPersonnels';
+          });
+          response.data.data.sysColumn = sysColumn.filter(function (x) {
+            return x.column != 'customerServicesPersonnels';
+          });
+        }
+      } catch (err) {
+        console.error(err);
+      }
+
+      return response;
+    }, function (error) {
+      console.info('接口请求出错啦', error);
+      return Promise.reject(error);
+    });
+
+        return exports;
+      })
+    })();
+/* 
+路径: /客服菜单屏蔽/顶部更多应用客服过滤/entry.js(main)
+ID: 885200851569795073
+AppID: 885200851569795072
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("886320029866319872", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "886320029866319872", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+    function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+    (0, _utils.regOvProps)('weappUi', 'MDialog', function (props) {
+      var queueAnimProps = _utils.ua.os === 'iOS' ? {
+        delay: 100
+      } : {};
+      return _objectSpread({}, props, {
+        queueAnimProps: _objectSpread({}, props === null || props === void 0 ? void 0 : props.queueAnimProps, {}, queueAnimProps)
+      });
+    });
+
+        return exports;
+      })
+    })();
+/* 
+路径: /全局组件处理/统一关闭MDialog动画/entry.js(main)
+ID: 887139084516909058
+AppID: 886320029866319872
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("889758688077004801", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "889758688077004801", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    (0, _utils.regOvProps)('weappUi', 'Select', function (props) {
+      if (props.weId && props.weId == '903dhc_dxm7ci_s961s4_abrgez_ngvy9q_7lhf0u_98yaqr@1_htfv0m@manufacturers_nf78ld@manufacturers_zggflt') {
+        var options = props.options;
+
+        if (options && options.length == 2) {
+          if (options[0] && options[0]['id'] == 'tencent' && options[1] && options[1]['id'] == 'enterpriseWeChat') {
+            props.readOnly = true;
+          }
+        }
+      }
+    });
+
+        return exports;
+      })
+    })();
+/* 
+路径: /全局组件处理/视频会议设置在授权会议应用下选项只读/entry.js(main)
+ID: 889758688077004806
+AppID: 889758688077004801
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("890383610012876801", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "890383610012876801", "entry.js");
+
+        "use strict";
+
+        return exports;
+      })
+    })();
+/* 
+路径: /屈正巍组件库云端ecode/图片预览客户端复制按钮临时屏蔽/entry.js(main)
+ID: 890383610012876806
+AppID: 890383610012876801
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("892259166551203841", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "892259166551203841", "entry.js");
+
+        weappUtils.regOvProps('weappUi', 'EditableTable', function (props) {
+      if (props.weId === "f56o40_xoym8z_3t5emd_bc1ehd_uhupip") {
+        delete props.selectedRowKeys;
+      }
+
+      return props;
+    }, 0);
+
+        return exports;
+      })
+    })();
+/* 
+路径: /浏览按钮群组菜单屏蔽/流程委托可编辑列表批量删除修复/entry.js(main)
+ID: 892259166551203846
+AppID: 892259166551203841
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("905439708020178944", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "905439708020178944", "entry.js");
+
+        var _react = _interopRequireDefault(require("react"));
+
+    var _reactDom = _interopRequireDefault(require("react-dom"));
+
+    var _axios = _interopRequireDefault(require("axios"));
+
+    var _utils = require("@weapp/utils");
+
+    var _ecodesdk = require("@weapp/ecodesdk");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    var enableTrans = window.sessionStorage.getItem("enableTrans"); // 接口开启
+
+    _axios.default.interceptors.request.use(function (config) {
+      if (enableTrans) {
+        config.headers.enableTrans = enableTrans;
+      }
+
+      return config;
+    }); // 判断当前是否开启翻译模式
+
+
+    var isShow = enableTrans && enableTrans !== "0";
+
+    if (isShow) {
+      var App = function App() {
+        return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_react.default.Suspense, {
+          fallback: function fallback() {}
+        }, _react.default.createElement(EHeader, {
+          isShow: isShow
+        })), _react.default.createElement(_react.default.Suspense, {
+          fallback: function fallback() {}
+        }, _react.default.createElement(EditorDialog, null)));
+      }; // 渲染dom
+
+
+      var style = 'line-height:1 !important;padding:0 !important;margin:0 !important;border:1px solid #bd00ff !important;box-shadow: 0px 0px 3px 0px rgba(158,0,255,1) !important;border-radius: 3px;cursor: pointer;';
+      var stopPropagation = 'window.event?window.event.cancelBubble = true:window.event.stopPropagation(); window.event.preventDefault()'; // 编辑弹框
+
+      var div = document.createElement("div");
+      div.id = "editLocaleTextModal";
+      document.body.appendChild(div); // react 钩子注册
+
+      var reg = /\${2,3}((?!_@).)*_@(\&|\~|\^)\d+@_\${2,3}/g;
+      var regContent = /\${2,3}(.)*_@(\&|\~|\^)\d+@_\${2,3}/g;
+      document.querySelector("#root").style.marginTop = "30px";
+
+      var handler = function handler(m) {
+        var arr = m.split('_@');
+
+        if (arr.length > 2) {
+          return arr[0].replace(/\${2,3}/g, '') + arr[1].split('$$$')[1];
+        } else {
+          return arr[0].split('$$$')[1];
+        }
+      };
+
+      (0, _utils.regReactPlugin)('setTextContent', function (o) {
+        var text = o.text;
+        var match = "".concat(text).match(regContent);
+
+        if (match) {
+          var html = '';
+
+          if (!!match.length) {
+            match.forEach(function (m) {
+              html += "<span onclick=\"doEditLocaleText('".concat(m.slice(m.lastIndexOf('_@'), m.lastIndexOf("@_") + 2), "');").concat(stopPropagation, "\" style=\"").concat(style, "\">").concat(m.replace(m, handler), "</span>");
+            });
+          }
+
+          var newNode = document.createElement('span');
+          newNode.innerHTML = html;
+          o.text = newNode;
+        }
+
+        return o;
+      });
+      (0, _utils.regReactPlugin)('setAttribute', function (o) {
+        var node = o.node,
+            attributeName = o.attributeName,
+            attributeValue = o.attributeValue;
+        if (!node) return o;
+
+        if (attributeName) {
+          if (['title', 'value', 'placeholder'].includes(attributeName)) {
+            if (attributeValue) {
+              var match = attributeValue.match(reg);
+
+              if (match) {
+                var str = attributeValue;
+
+                for (var i = 0; i < match.length; i++) {
+                  str = str.replace(reg, function (s) {
+                    return s.split('_@')[0].split('$$$')[1] ? s.split('_@')[0].split('$$$')[1] : s.split('_@')[0].split('$$')[1];
+                  });
+                } // 处理个别情况下 数据调整后仍然有问题
+
+
+                var isMatch = str.match(reg);
+
+                if (isMatch) {
+                  for (var _i = 0; _i < match.length; _i++) {
+                    str = str.replace(reg, function (s) {
+                      return s.split('_@')[0].split('$$$')[1] ? s.split('_@')[0].split('$$$')[1] : s.split('_@')[0].split('$$')[1];
+                    });
+                  }
+                }
+
+                o.attributeValue = str;
+              }
+            }
+          }
+        }
+
+        return o;
+      });
+      (0, _utils.regReactPlugin)('appendChild', function (o) {
+        var child = o.child,
+            parentInstance = o.parentInstance;
+
+        if (child && child.getAttribute) {
+          var valueText = child.getAttribute("value");
+
+          if (valueText) {
+            var match = valueText.match(reg);
+
+            if (match) {
+              setTimeout(function () {
+                var str = valueText.replace(reg, function (s) {
+                  return s.split('_@')[0].split('$$$')[1];
+                });
+                child.value = str;
+                child.defaultValue = str;
+              }, 0);
+            }
+          }
+        }
+
+        if (child.nodeType === 3) {
+          var text = child.textContent;
+
+          var _match = text.match(reg);
+
+          if (!_match) {
+            text = child.wholeText;
+            _match = text.match(reg);
+          }
+
+          if (_match) {
+            if (!!_match.length) {
+              var newEle = document.createElement('span');
+              newEle.setAttribute('hasappendchild', true);
+              var newText = text;
+
+              if (_match.length === 1) {
+                _match.forEach(function (m) {
+                  newEle.setAttribute('style', style);
+                  newEle.innerText = m.split('_@')[0].split('$$$')[1];
+                  newEle.setAttribute('onclick', "doEditLocaleText('".concat(m.slice(m.indexOf('_@'), m.indexOf("@_") + 2), "');").concat(stopPropagation));
+                });
+              } else {
+                _match.forEach(function (m) {
+                  newText = newText.replace(m, "<span onclick=\"doEditLocaleText('".concat(m.slice(m.indexOf('_@'), m.indexOf("@_") + 2), "');").concat(stopPropagation, "\" style=\"").concat(style, "\">").concat(m.split('_@')[0].split('$$$')[1], "</span>"));
+                  newEle.innerHTML = newText;
+                });
+              }
+
+              o.child.textContent = '';
+              parentInstance.appendChild(newEle);
+            }
+          }
+        }
+
+        return o;
+      });
+      (0, _utils.regReactPlugin)('createTextInstance', function (o) {
+        var text = o.text;
+        var match = "".concat(text).match(reg);
+
+        if (!!match) {
+          // console.log('createTextInstance', o);
+          var newEle = document.createElement('span');
+          var newText = text;
+
+          if (match.length === 1) {
+            match.forEach(function (m) {
+              newEle.setAttribute('style', style);
+              newEle.innerText = m.split('_@')[0].split('$$$')[1];
+              newEle.setAttribute('onclick', "doEditLocaleText('".concat(m.slice(m.indexOf('_@'), m.indexOf("@_") + 2), "');").concat(stopPropagation));
+            });
+          } else {
+            match.forEach(function (m) {
+              newText = newText.replace(m, "<span onclick=\"doEditLocaleText('".concat(m.slice(m.indexOf('_@'), m.indexOf("@_") + 2), "');").concat(stopPropagation, "\" style=\"").concat(style, "\">").concat(m.split('_@')[0].split('$$$')[1], "</span>"));
+              newEle.innerHTML = newText;
+            });
+          }
+
+          o.text = newEle;
+        }
+
+        return o;
+      });
+      (0, _utils.regReactPlugin)('setInnerHTML', function (o) {
+        var html = o.html;
+        var newHtml = "".concat(html);
+        var match = newHtml.match(reg);
+
+        if (match) {
+          var nodes = newHtml.match(/\<.*?\>/ig);
+
+          if (nodes && nodes.length) {
+            newHtml = newHtml.replace(/\<.*?\>/ig, function () {
+              return '{~}';
+            });
+          }
+
+          match = newHtml.match(reg);
+
+          if (match && match.length) {
+            match.forEach(function (m) {
+              var mhtml = "<span onclick=\"doEditLocaleText('".concat(m.slice(m.indexOf('_@'), m.indexOf("@_") + 2), "');").concat(stopPropagation, "\" style=\"").concat(style, "\">").concat(m.split('_@')[0].split('$$$')[1], "</span>");
+              newHtml = newHtml.replace(m, function () {
+                return mhtml;
+              });
+            });
+          }
+
+          nodes && nodes.length && nodes.forEach(function (n, i) {
+            newHtml = newHtml.replace(/{~}/, function () {
+              return nodes[i];
+            });
+          });
+          o.html = newHtml;
+        }
+
+        return o;
+      }); // 监听title的改变
+
+      var observer = new MutationObserver(function (mutations) {
+        var text = mutations[0].target.innerText;
+        var match = text.match(reg);
+
+        if (match) {
+          mutations[0].target.innerText = text.replace(reg, function (s) {
+            return s.split('_@')[0].split('$$$')[1];
+          });
+        }
+      });
+      observer.observe(document.querySelector("title"), {
+        childList: true
+      }); // 加载对应弹框组件
+
+      var EditorDialog = _react.default.lazy(function () {
+        return (0, _ecodesdk.asyncImport)('905439708020178944', 'EditorDialog');
+      }); // 加载对应header组件
+
+
+      var EHeader = _react.default.lazy(function () {
+        return (0, _ecodesdk.asyncImport)('905439708020178944', 'Header');
+      });
+
+      (0, _utils.getLocale)('@weapp/ui').then(function () {
+        _reactDom.default.render(_react.default.createElement(App, null), div);
+      });
+
+      window.doEditLocaleText = function doEditLocaleText(text) {
+        var target = window.event.target;
+
+        _utils.eventEmitter.emit('translation_mode', 'openDialog', {
+          text: text,
+          target: target
+        });
+      };
+    }
+
+        return exports;
+      })
+    })();
+/* 
+路径: /国际化/translation_mode/entry.js(main)
+ID: 905439708020178951
+AppID: 905439708020178944
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("921561288740765696", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "921561288740765696", "entry.js");
+
+        if (window.location.href.includes('ecode.ebiaoge.com') || /(?=.*weapp.eteams.cn)(?=.*freepass)/.test(window.location.href) || /(?=.*weapp.e-cloudstore.com)(?=.*freepass)/.test(window.location.href)) {
+      var _open = window.open;
+      var domDiv = document.createElement('div');
+      domDiv.setAttribute('id', 'doLogin');
+      domDiv.setAttribute('style', 'cursor:pointer;position: absolute;right: 20px;color:color: var(--main-fc);font-size: 14px;');
+      domDiv.innerHTML = '登录';
+      var getInterval = setInterval(function () {
+        if (document.getElementsByClassName('weapp-cloudstore-header-user')[0]) {
+          window.location.href.includes('freepass') && document.getElementsByClassName('weapp-cloudstore-header-user')[0].appendChild(domDiv);
+          window.location.href.includes('ecode.ebiaoge.com') && setTimeout(function () {
+            document.title = '泛微云商店';
+          });
+          document.getElementById('doLogin') && document.getElementById('doLogin').addEventListener('click', function () {
+            console.log('login'); // https://weapp.eteams.cn/sp/cloudstore/case/all/normal
+
+            if (window.location.href.includes('ecode.ebiaoge.com')) window.location.replace('https://passport.eteams.cn/login?service=https://weapp.eteams.cn/sp/cloudstore/case/all/normal');else if (window.location.href.includes('weapp.e-cloudstore.com')) window.location.replace(document.cookie.includes('ETEAMSID') ? 'https://weapp.e-cloudstore.com/sp/cloudstore/case/all/normal' : 'https://passport.e-cloudstore.com/login?service=https://weapp.e-cloudstore.com/sp/cloudstore/case/all/normal');else window.location.replace('https://passport.eteams.cn/login?service=https://weapp.eteams.cn/sp/cloudstore/case/all/normal');
+          });
+          clearInterval(getInterval);
+        }
+      }, 100);
+      setTimeout(function () {
+        clearInterval(getInterval);
+      }, 5000);
+
+      window.open = function (t, r, o) {
+        console.log(t);
+
+        if (t.includes('login')) {
+          t = t.replace('ecode.ebiaoge.com', 'weapp.eteams.cn');
+          t = t.replace('weapp.e-cloudstore.com', 'passport.e-cloudstore.com');
+        }
+
+        _open(t, r, o);
+      };
+    }
+
+        return exports;
+      })
+    })();
+/* 
+路径: /云商店公有登录页跳转/main/entry.js(main)
+ID: 921561288740765701
+AppID: 921561288740765696
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("921979068866691072", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "921979068866691072", "entry.js");
+
+        var currentUrlOrigin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : ''); //限制当前域名eteams 并且非自定义登录页
+
+    console.info('test_login');
+
+    if (currentUrlOrigin === 'https://passport.eteams.cn' && window.location.pathname.indexOf('/customlogin') === -1) {
+      var customStyle = document.createElement('style');
+      customStyle.innerHTML = '.weapp-passport-header {display:none !important}';
+      customStyle.setAttribute('type', 'text/css');
+      document.head.appendChild(customStyle);
+    }
+
+        return exports;
+      })
+    })();
+/* 
+路径: /doc/登录Header样式/entry.js(main)
+ID: 921979068866691077
+AppID: 921979068866691072
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("926880914979651584", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "926880914979651584", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+    function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+    (0, _utils.regOvProps)('weappUi', 'Menu', function (props) {
+      var _props$className;
+
+      if ((_props$className = props.className) === null || _props$className === void 0 ? void 0 : _props$className.includes('ebcoms-navmenu-menu-tab')) {
+        var _props$data;
+
+        var data = (_props$data = props.data) === null || _props$data === void 0 ? void 0 : _props$data.map(function (item) {
+          var _item$childMenus;
+
+          var content = (item === null || item === void 0 ? void 0 : item.content) || React.createElement(React.Fragment, null);
+
+          if (item === null || item === void 0 ? void 0 : (_item$childMenus = item.childMenus) === null || _item$childMenus === void 0 ? void 0 : _item$childMenus.length) {
+            return _objectSpread({}, item, {
+              content: React.createElement(React.Fragment, null, content, React.createElement("div", {
+                className: "ebcoms-navmenu-menu-tab-horizontal-arrow"
+              }))
+            });
+          }
+
+          return item;
+        });
+        props.data = data;
+      }
+
+      return props;
+    }, 0);
+
+        return exports;
+      })
+    })();
+/* 
+路径: /系统项目/导航菜单新增样式横向菜单下拉/entry.js(main)
+ID: 926880914979651585
+AppID: 926880914979651584
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("945008966857244673", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "945008966857244673", "entry.js");
+
+        window._cloudOffLineTenants = ['t44h0t41vj', 'tydpoljw5d', 'tn29k9o01c', 'tuz9kq464z', 't48i1tzv8v', 't8dfq0c2b9', 'tt0mwegfot', 'tvf19yci9u', 'tr12kclyfm', 'to5lo83xmw', 't44h0t41vj', 'tskplya94r', 'tx84weqod4', 't33txii48t', 'tk6bd9ugtd', 'tdm1i0i0ho'];
+
+        return exports;
+      })
+    })();
+/* 
+路径: /云商店公有登录页跳转(移动)/专项上传租户配置/entry.js(main)
+ID: 945008966857244678
+AppID: 945008966857244673
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("946617144439865345", "config/config.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "946617144439865345", "config/config.js");
+
+        Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.LinkConfigs = void 0;
+    var LinkConfigs = [{
+      key: "cth_contract_1",
+      IconName: "Icon-demonstration-o",
+      IconTitle: "业务体验站",
+      RedirectOrigin: 'https://weapp.eteams.cn',
+      RedirectPath: "/sp/custom/853270544271425537/home",
+      TokenURL: "https://api.eteams.cn/oauth2/get_logintoken",
+      AppKey: '7395a37bff490850625fd245aafa5c60',
+      AppSecurity: '86a4120df080eff27f287a4a1113b62f',
+      AccountType: "",
+      Account: "13661633641"
+    }, {
+      key: "cth_contract_2",
+      IconName: "Icon-e-builder-o",
+      IconTitle: "低代码演示",
+      RedirectOrigin: 'https://www.e-cology.com.cn',
+      RedirectPath: "/ebdapp/view/910799174410043411/link/2859560592116681102/scene/render/911179571020251141?cusMenuId=2859560592116681102&urlPageTitle=5Lia5Yqh6YC76L6R5Zu%20",
+      TokenURL: "https://www.e-cology.com.cn/openserver/oauth2/get_logintoken",
+      AppKey: 'c61b788fbc256c8d6c43a22281fb2deb',
+      AppSecurity: '2bb565b6af525cbb47764e2f836b04d4',
+      AccountType: "",
+      Account: "ywy"
+    }];
+    exports.LinkConfigs = LinkConfigs;
+
+        return exports;
+      })
+    })();
+/* 
+路径: /升级项目/自用系统eteams免登/config.js(main)
+ID: 946617144439865359
+AppID: 946617144439865345
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("946617144439865345", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "946617144439865345", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    var _react = _interopRequireDefault(require("react"));
+
+    var _config = require("./config/config.js");
+
+    var _api = require("./api.js");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+    function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+    function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+    function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+    function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+    function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+    function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+    function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+    var localKey = "cth_local_storage";
+    var isContract = false;
+    (0, _utils.regOvComponent)("weappLayout", "QuickToolbar", function (Com) {
+      return _react.default.forwardRef(function (props, ref) {
+        var _ref = _react.default.useRef();
+
+        var appId = getAppId();
+        /** 添加按钮 */
+
+        function addButton(config) {
+          if (!config || !isContract) {
+            return;
+          }
+
+          if (props.headerMenuStore.navMenus.find(function (item) {
+            return item.menuKey === config.key;
+          })) {
+            return;
+          }
+
+          var menuObj = {
+            "id": "9000000001",
+            "createTime": 1672142058000,
+            "menuName": config.IconTitle,
+            "icon": "Icon-Tencent-Email",
+            "menuEnable": 1,
+            "openWay": 0,
+            "useLimit": 0,
+            "orderNo": 0,
+            "menuType": "DEFAULT_MENU",
+            "i18nId": "162604",
+            "groupType": "NAVIGATION",
+            "windowSize": 0,
+            "i18nMenuName": config.IconTitle,
+            "customI18nId": "-1",
+            "defaultOrderNo": 1,
+            "menuKey": config.key,
+            "clientType": "webClient",
+            "licenseDisplay": true
+          };
+          mobx.runInAction(function () {
+            props.headerMenuStore.navMenus = [menuObj].concat(_toConsumableArray(props.headerMenuStore.navMenus));
+            props.headerMenuStore.navMenusKey = "refresh_key_".concat(new Date().getTime());
+          });
+        }
+        /** 添加事件 */
+
+
+        function addEvent(config) {
+          var __ref = ref || _ref;
+
+          if (!(__ref === null || __ref === void 0 ? void 0 : __ref.current)) {
+            return;
+          }
+
+          __ref.current.menuControlIdMap[config.key] = {
+            visible: true,
+            action: function action() {
+              (0, _api.getLoginURL)(config).then(function (url) {
+                if (url) {
+                  if (isSameOrigin(window.location.href, url)) {
+                    window.location.assign(url);
+                  } else {
+                    window.open(url);
+                  }
+                }
+              }).catch(function (e) {
+                console.error(e);
+              });
+            },
+            render: function render() {
+              return renderMenuIcon(config);
+            }
+          };
+        }
+        /** 显示提示 */
+
+
+        function showTip(config) {
+          var key = '__jcd_login_int'; // 已显示过
+
+          if (localStorage.getItem(localKey)) {
+            return;
+          } // 避免无限生成定时器
+
+
+          if (window[key]) {
+            clearInterval(window[key]);
+          }
+
+          var count = 50;
+          window[key] = setInterval(function () {
+            var iconEl = document.querySelector(".e10header-quick-toolbar-item[title=\"".concat(config.IconTitle, "\"]"));
+            count--; // 避免无限轮询
+
+            if (count <= 0) {
+              clearInterval(window[key]);
+            }
+
+            if (iconEl) {
+              showIntroduction(iconEl);
+              clearInterval(window[key]);
+              localStorage.setItem(localKey, 1);
+            }
+          }, 300);
+        }
+
+        function run() {
+          // 用来监听依赖
+          var dds = props.headerMenuStore.navMenusKey;
+
+          _config.LinkConfigs.forEach(function (config) {
+            addButton(config);
+            addEvent(config);
+          });
+
+          showTip(_config.LinkConfigs[0]);
+        }
+
+        _react.default.useEffect(function () {
+          mobx.autorun(run);
+        }, []);
+
+        _react.default.useEffect(function () {
+          checkIsContract1(appId).then(function (isCont) {
+            isContract = isCont;
+            run();
+          });
+          return function () {
+            isContract = false;
+          };
+        }, [appId]);
+
+        return _react.default.createElement(Com, _objectSpread({}, props, {
+          ref: ref || _ref
+        }));
+      });
+    });
+
+    function renderMenuIcon(config) {
+      var style = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%'
+      };
+      return _react.default.createElement('div', {
+        style: style
+      }, _react.default.createElement(weappUi.Icon, {
+        name: config.IconName,
+        size: "md"
+      }));
+    }
+
+    function showIntroduction(el) {
+      weappUi.Intro().then(function (r) {
+        var introJs = r.default;
+        introJs().setOptions({
+          doneLabel: "好的",
+          tooltipClass: "abc_th",
+          steps: [{
+            intro: '可点击右上角合同管理Demo，进行完整的业务体验',
+            element: el
+          }]
+        }).start();
+      });
+    }
+
+    function getAppId() {
+      var _window$top, _window$top$location;
+
+      var pathname = (_window$top = window.top) === null || _window$top === void 0 ? void 0 : (_window$top$location = _window$top.location) === null || _window$top$location === void 0 ? void 0 : _window$top$location.pathname;
+      var appIdRegs = [/\/(?:ebdapp|portal)\/view\/(\d+)/, /\/sp\/ebdapp\/build\/(\d+)/, /\/sp\/ebdapp\/preview\/(\d+)/];
+
+      for (var i = 0; i < appIdRegs.length; i++) {
+        var _pathname$match;
+
+        var appIdReg = appIdRegs[i];
+        var appId = pathname === null || pathname === void 0 ? void 0 : (_pathname$match = pathname.match(appIdReg)) === null || _pathname$match === void 0 ? void 0 : _pathname$match[1];
+
+        if (appId) {
+          return appId;
+        }
+      }
+    }
+
+    function checkIsContract1(_x) {
+      return _checkIsContract.apply(this, arguments);
+    }
+
+    function _checkIsContract() {
+      _checkIsContract = _asyncToGenerator(
+      /*#__PURE__*/
+      regeneratorRuntime.mark(function _callee(appId) {
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                return _context.abrupt("return", window.TEAMS.currentTenant.tenantKey === "t44h0t41vj");
+
+              case 1:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+      return _checkIsContract.apply(this, arguments);
+    }
+
+    function isSameOrigin(url1, url2) {
+      try {
+        var u1 = new URL(url1);
+        var u2 = new URL(url2);
+        return u1.origin === u2.origin;
+      } catch (e) {
+        return false;
+      }
+    }
+
+        return exports;
+      })
+    })();
+/* 
+路径: /升级项目/自用系统eteams免登/entry.js(main)
+ID: 955487974190891010
+AppID: 946617144439865345
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("946617144439865345", "api.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "946617144439865345", "api.js");
+
+        Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.getLoginURL = getLoginURL;
+    exports.checkIsContract = checkIsContract;
+
+    var _utils = require("@weapp/utils");
+
+    function getToken(config) {
+      return (0, _utils.request)({
+        url: '/api/ebd/contract/demo/token',
+        method: 'POST',
+        headers: {
+          ebBusinessId: "10000000000000000"
+        },
+        data: {
+          url: config.TokenURL,
+          app_key: config.AppKey,
+          app_security: config.AppSecurity,
+          account: config.Account
+        }
+      }).then(function (res) {
+        return res.data.etLoginToken;
+      });
+    }
+
+    function getLoginURL(config) {
+      var data = new FormData();
+      data.append("app_key", config.AppKey);
+      data.append("app_security", config.AppSecurity);
+      data.append("account", config.Account);
+      return getToken(config).then(function (token) {
+        var url = "".concat(config.RedirectOrigin).concat(config.RedirectPath);
+        return "".concat(config.RedirectOrigin, "/papi/open/singleSignon?singleToken=").concat(token, "&oauthType=singlesign&redirect_uri=").concat(url);
+      });
+    }
+
+    function checkIsContract(appId) {
+      return (0, _utils.request)({
+        url: '/api/installer/public/checkIsSpecialByAppId',
+        method: 'GET',
+        params: {
+          appId: appId
+        }
+      }).then(function (res) {
+        return res.data;
+      }).catch(function (err) {
+        return false;
+      });
+    }
+
+        return exports;
+      })
+    })();
+/* 
+路径: /升级项目/自用系统eteams免登/api.js(main)
+ID: 955487974190891013
+AppID: 946617144439865345
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("972762800768303104", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "972762800768303104", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    var coms = ['Comment', 'CommentEdit', 'CommentEditText', 'ReplyFloor', 'CommentItemFooter', 'CommentList', 'CommentMenu'];
+    coms.forEach(function (comKey) {
+      (0, _utils.regOvProps)('weappUi', comKey, function (props) {
+        var actionConfig = props.actionConfig || ["upload", "emoticon", "associated", "at"];
+
+        var _ref = window.TEAMS || {},
+            authWecahtBook = _ref.authWecahtBook,
+            wxEmpNeedConvertCount = _ref.wxEmpNeedConvertCount;
+
+        var iswx = _utils.ua.browser === 'wxwork';
+
+        if (iswx && !authWecahtBook && wxEmpNeedConvertCount > 0) {
+          // 是企业微信且无通讯录授权
+          if (Array.isArray(actionConfig)) {
+            props.actionConfig = actionConfig.filter(function (action) {
+              return action !== 'at';
+            });
+          }
+        }
+
+        return props;
+      }, 0);
+    });
+
+        return exports;
+      })
+    })();
+/* 
+路径: /评论At/评论At按钮根据企业微信通讯录套件是否授权进行隐藏pc/entry.js(main)
+ID: 972762800768303105
+AppID: 972762800768303104
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("972893367887699969", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "972893367887699969", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    /** 
+     * 2024-03-5 17:19
+     * 演示-私有化云商店安装跳转
+     */
+    var appId = "957363148181053441";
+    var address = "https://demowork.e-cology.com.cn/ebdapp/view/972543242099195909";
+
+    function containPath(path) {
+      return window.location.href.includes(path);
+    }
+
+    if (containPath("/sp/cloudstore") && containPath("demowork.e-cology.com.cn")) {
+      (0, _utils.regOvProps)('weappUi', 'Button', function (props) {
+        var _props$weId;
+
+        if ((_props$weId = props.weId) === null || _props$weId === void 0 ? void 0 : _props$weId.includes(appId)) {
+          props.onClick = function () {
+            return window.open(address);
+          };
+        }
+
+        return props;
+      });
+    }
+
+        return exports;
+      })
+    })();
+/* 
+路径: /系统项目/演示-私有化云商店安装跳转/entry.js(main)
+ID: 974666587997118465
+AppID: 972893367887699969
+*/
+(function () {
+      "use strict";
+      window.weappEcodesdk.jsonp.export("976104190800461825", "entry.js", function () {
+        var exports = {};
+        var require = window.weappEcodesdk.jsonp.require.bind(null, "976104190800461825", "entry.js");
+
+        var _utils = require("@weapp/utils");
+
+    function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return !!right[Symbol.hasInstance](left); } else { return left instanceof right; } }
+
+    function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+    function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+    function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+    var jugIsMobile = function jugIsMobile() {
+      return (_utils.ua === null || _utils.ua === void 0 ? void 0 : _utils.ua.device) === 'Mobile';
+    };
+
+    var DocWXPlugin = // 当前用户是否绑定手机号
+    // 当前用户是否有可用的协同编辑插件
+    // 当前是否为文档页面
+    // 当前是否为移动端页面（只在初始化加载一次）
+    // 当前是否为微信客户端
+    function DocWXPlugin() {
+      var _this = this;
+
+      _classCallCheck(this, DocWXPlugin);
+
+      this.isDoc = false;
+      this.isMobile = jugIsMobile();
+      this.isWXClient = _utils.ua.browser === 'wxwork' || _utils.ua.device === 'wxwork';
+
+      this.fetchBindMobileStatus = function () {
+        if (typeof _this.isBindMobile === 'boolean') return;
+        (0, _utils.request)({
+          url: '/api/baseserver/layout/checkBindMobile'
+        }).then(function (res) {
+          if (+res.code === 200 && res.data) {
+            _this.isBindMobile = res.data.isBindMobile;
+          } else {
+            _this.isBindMobile = false;
+          }
+        }).catch(function () {
+          _this.isBindMobile = false;
+        });
+      };
+
+      this.fetchCollaborativeDocPlugs = function () {
+        if (typeof _this.isCollaborativeDocuments === 'boolean') return;
+        (0, _utils.request)({
+          url: '/api/file/filePlugExtend/getCollaborativeDocPlugs'
+        }).then(function (res) {
+          if (+res.code === 200 && res.data) {
+            _this.isCollaborativeDocuments = res.data.collaborativeDocuments;
+          } else {
+            _this.isCollaborativeDocuments = false;
+          }
+        }).catch(function () {
+          _this.isCollaborativeDocuments = false;
+        });
+      };
+
+      this.hijackHistoryPushState = function () {
+        var extendEvent = function extendEvent(type) {
+          var orig = history[type];
+          return function () {
+            try {
+              var e;
+
+              if (typeof window.Event === 'function') {
+                e = new Event(type);
+              } else {
+                var _e, _e$initEvent;
+
+                e = document.createEvent('Event');
+                (_e = e) === null || _e === void 0 ? void 0 : (_e$initEvent = _e.initEvent) === null || _e$initEvent === void 0 ? void 0 : _e$initEvent.call(_e, type, true, true);
+              }
+
+              if (e) {
+                var _window, _window$dispatchEvent;
+
+                e.arguments = arguments;
+                (_window = window) === null || _window === void 0 ? void 0 : (_window$dispatchEvent = _window.dispatchEvent) === null || _window$dispatchEvent === void 0 ? void 0 : _window$dispatchEvent.call(_window, e);
+              }
+
+              var rv = orig.apply(this, arguments);
+              return rv;
+            } catch (error) {
+              console.log('pushState error.', error);
+            }
+          };
+        };
+
+        if (!window._historyHiJack) {
+          window._history_hijack = true;
+          window._history_hijack_info = {
+            name: 'doc wx plugin',
+            appid: '976104190800461825'
+          };
+          history.pushState = extendEvent('pushState');
+          history.go = extendEvent('go');
+        }
+
+        var _handlePushState_DocWX = function _handlePushState_DocWX(e) {
+          var _e$arguments, _pathname$includes, _pathname$includes2;
+
+          var pathname = e === null || e === void 0 ? void 0 : (_e$arguments = e.arguments) === null || _e$arguments === void 0 ? void 0 : _e$arguments[2];
+          _this.isDoc = (pathname === null || pathname === void 0 ? void 0 : (_pathname$includes = pathname.includes) === null || _pathname$includes === void 0 ? void 0 : _pathname$includes.call(pathname, '/doc')) && !(pathname === null || pathname === void 0 ? void 0 : (_pathname$includes2 = pathname.includes) === null || _pathname$includes2 === void 0 ? void 0 : _pathname$includes2.call(pathname, 'freepass'));
+          _this.isDoc && _this.main();
+        };
+
+        window.removeEventListener('pushState', _handlePushState_DocWX);
+        window.addEventListener('pushState', _handlePushState_DocWX);
+      };
+
+      this.init = function () {
+        var _window2, _window2$location, _window2$location$pat, _window2$location$pat2, _window3, _window3$location, _window3$location$pat, _window3$location$pat2;
+
+        _this.isDoc = ((_window2 = window) === null || _window2 === void 0 ? void 0 : (_window2$location = _window2.location) === null || _window2$location === void 0 ? void 0 : (_window2$location$pat = _window2$location.pathname) === null || _window2$location$pat === void 0 ? void 0 : (_window2$location$pat2 = _window2$location$pat.includes) === null || _window2$location$pat2 === void 0 ? void 0 : _window2$location$pat2.call(_window2$location$pat, 'doc')) && !((_window3 = window) === null || _window3 === void 0 ? void 0 : (_window3$location = _window3.location) === null || _window3$location === void 0 ? void 0 : (_window3$location$pat = _window3$location.pathname) === null || _window3$location$pat === void 0 ? void 0 : (_window3$location$pat2 = _window3$location$pat.includes) === null || _window3$location$pat2 === void 0 ? void 0 : _window3$location$pat2.call(_window3$location$pat, 'freepass'));
+        _this.isDoc && _this.main();
+      };
+
+      this.main = function () {
+        _this.fetchBindMobileStatus();
+
+        !_this.isMobile && _this.fetchCollaborativeDocPlugs();
+      };
+
+      this.hidePcMenu = function () {
+        (0, _utils.regOvProps)('weappUi', 'Menu', function (props) {
+          var _props$weId, _props$weId$endsWith;
+
+          if (((_props$weId = props.weId) === null || _props$weId === void 0 ? void 0 : (_props$weId$endsWith = _props$weId.endsWith) === null || _props$weId$endsWith === void 0 ? void 0 : _props$weId$endsWith.call(_props$weId, '_39u13z')) && _this.isDoc && _this.isWXClient) {
+            var _window4, _window4$TEAMS;
+
+            var data = props.data || []; // 隐藏文件同步菜单
+
+            data = data.filter(function (item) {
+              return item.id === '8216002709486658189' && item.navId === '2225822942048321049' ? false : true;
+            }); // 是否授权企业微信通讯录套件
+
+            var isAuthWecahtBook = ((_window4 = window) === null || _window4 === void 0 ? void 0 : (_window4$TEAMS = _window4.TEAMS) === null || _window4$TEAMS === void 0 ? void 0 : _window4$TEAMS.authWecahtBook) || false; // 未授权 且 无可用协同文档插件，隐藏协同文档菜单
+
+            if (!isAuthWecahtBook && !_this.isCollaborativeDocuments) {
+              data = data.filter(function (item) {
+                return item.id === '8514007904921421750' && item.navId === '2225822942048321049' ? false : true;
+              });
+            }
+
+            props.data = data;
+          }
+
+          return props;
+        }, 0);
+      };
+
+      this.hideExterShareMenu = function () {
+        // 未绑定手机号，隐藏 pc 文档详情，操作下拉 “外部分享菜单” 菜单
+        (0, _utils.regOvProps)('weappUi', 'Menu', function (props) {
+          var _props$weId2, _props$weId2$endsWith;
+
+          if (((_props$weId2 = props.weId) === null || _props$weId2 === void 0 ? void 0 : (_props$weId2$endsWith = _props$weId2.endsWith) === null || _props$weId2$endsWith === void 0 ? void 0 : _props$weId2$endsWith.call(_props$weId2, '1odfgb')) && _this.isDoc && _this.isWXClient) {
+            var data = props.data || [];
+
+            if (!_this.isBindMobile) {
+              data = data.filter(function (item) {
+                return item.id === 'share' ? false : true;
+              });
+            }
+
+            props.data = data;
+          }
+
+          return props;
+        }, 0); // 未绑定手机号，隐藏 pc 文档列表、列表左侧树，右键 “外部分享” 菜单 - 非列表视图
+
+        axios.interceptors.response.use(function (_response) {
+          var _config$url;
+
+          var config = _response.config,
+              response = _response.data;
+
+          if ((config === null || config === void 0 ? void 0 : (_config$url = config.url) === null || _config$url === void 0 ? void 0 : _config$url.includes('/api/doc/documents/listMetadata')) && +(response === null || response === void 0 ? void 0 : response.code) === 200 && response.data && _this.isDoc && _this.isWXClient && !_this.isBindMobile) {
+            var _Object$keys, _Object$keys2;
+
+            var _ref = response.data || {},
+                _ref$docMetadata = _ref.docMetadata,
+                docMetadata = _ref$docMetadata === void 0 ? {} : _ref$docMetadata,
+                _ref$folderMetadata = _ref.folderMetadata,
+                folderMetadata = _ref$folderMetadata === void 0 ? {} : _ref$folderMetadata;
+
+            var setCanExternalShareFalse = function setCanExternalShareFalse(obj) {
+              return Object.keys(obj).forEach(function (id) {
+                return obj[id].canExternalShare = false;
+              });
+            };
+
+            if ((_Object$keys = Object.keys(docMetadata)) === null || _Object$keys === void 0 ? void 0 : _Object$keys.length) setCanExternalShareFalse(docMetadata);
+            if ((_Object$keys2 = Object.keys(folderMetadata)) === null || _Object$keys2 === void 0 ? void 0 : _Object$keys2.length) setCanExternalShareFalse(folderMetadata);
+            _response.data.data = {
+              docMetadata: docMetadata,
+              folderMetadata: folderMetadata
+            };
+          }
+
+          return _response;
+        }); // 未绑定手机号，隐藏 pc 文档列表、列表左侧树，右键 “外部分享” 菜单 - 列表视图
+
+        axios.interceptors.response.use(function (_response) {
+          var _config$url2;
+
+          var config = _response.config,
+              response = _response.data;
+
+          if ((config === null || config === void 0 ? void 0 : (_config$url2 = config.url) === null || _config$url2 === void 0 ? void 0 : _config$url2.includes('/api/doc/documents/documentListPermissions')) && +(response === null || response === void 0 ? void 0 : response.code) === 200 && response.data && _this.isDoc && _this.isWXClient && !_this.isBindMobile) {
+            var _ref2 = response.data || {},
+                _ref2$operates = _ref2.operates,
+                operates = _ref2$operates === void 0 ? [] : _ref2$operates,
+                _ref2$operatesPermiss = _ref2.operatesPermission,
+                operatesPermission = _ref2$operatesPermiss === void 0 ? [] : _ref2$operatesPermiss;
+
+            _response.data.data = _objectSpread({}, response.data, {
+              operates: (operates || []).map(function (item) {
+                return item.key === 'externalShare' ? _objectSpread({}, item, {
+                  visible: false
+                }) : item;
+              }),
+              operatesPermission: (operatesPermission || []).map(function (item) {
+                return (item || []).map(function (_item) {
+                  return _item.docOperateKey === 'externalShare' ? _objectSpread({}, _item, {
+                    visible: false
+                  }) : _item;
+                });
+              })
+            });
+          }
+
+          return _response;
+        }); // 未绑定手机号，隐藏 mobile 文档列表，更多操作下 “外部分享” 菜单
+
+        axios.interceptors.response.use(function (_response) {
+          var _config$url3;
+
+          var config = _response.config,
+              response = _response.data;
+
+          if ((config === null || config === void 0 ? void 0 : (_config$url3 = config.url) === null || _config$url3 === void 0 ? void 0 : _config$url3.includes('api/app/doc/documents/listMetadata')) && +(response === null || response === void 0 ? void 0 : response.code) === 200 && response.data && _this.isDoc && _this.isWXClient && !_this.isBindMobile) {
+            var _Object$keys3, _Object$keys4;
+
+            var _ref3 = response.data || {},
+                _ref3$docMetadata = _ref3.docMetadata,
+                docMetadata = _ref3$docMetadata === void 0 ? {} : _ref3$docMetadata,
+                _ref3$folderMetadata = _ref3.folderMetadata,
+                folderMetadata = _ref3$folderMetadata === void 0 ? {} : _ref3$folderMetadata;
+
+            var setCanExternalShareFalse = function setCanExternalShareFalse(obj) {
+              return Object.keys(obj).forEach(function (id) {
+                return obj[id].canExternalShare = false;
+              });
+            };
+
+            if ((_Object$keys3 = Object.keys(docMetadata)) === null || _Object$keys3 === void 0 ? void 0 : _Object$keys3.length) setCanExternalShareFalse(docMetadata);
+            if ((_Object$keys4 = Object.keys(folderMetadata)) === null || _Object$keys4 === void 0 ? void 0 : _Object$keys4.length) setCanExternalShareFalse(folderMetadata);
+            _response.data.data = {
+              docMetadata: docMetadata,
+              folderMetadata: folderMetadata
+            };
+          }
+
+          return _response;
+        });
+        /**
+         * 未绑定手机号
+         * 1. 隐藏 mobile 文档列表，左滑更多操作 “外部分享” 菜单
+         * 2. 隐藏 mobile 文档详情，右下角更多操作 “外部分享” 菜单
+         */
+
+        (0, _utils.regOvProps)('weappUi', 'ActionSheetInner', function (props) {
+          var _props$weId3, _props$weId3$endsWith;
+
+          // 未绑定手机号，隐藏 mobile 文档详情，ActionSheet “外部分享菜单” 菜单
+          if (((_props$weId3 = props.weId) === null || _props$weId3 === void 0 ? void 0 : (_props$weId3$endsWith = _props$weId3.endsWith) === null || _props$weId3$endsWith === void 0 ? void 0 : _props$weId3$endsWith.call(_props$weId3, '_xw6hk1')) && _this.isDoc && _this.isWXClient) {
+            var options = props.options || [];
+
+            if (!_this.isBindMobile) {
+              options = options.filter(function (item) {
+                return item.id === 'outShare' ? false : true;
+              });
+              props.cancelButtonIndex = props.cancelButtonIndex - 1;
+            }
+
+            props.options = options;
+          }
+
+          return props;
+        }, 0);
+      };
+
+      this.hijackHistoryPushState();
+      this.hidePcMenu();
+      this.hideExterShareMenu();
+    } // fetch current user bind mobile status
+    ;
+
+    new DocWXPlugin().init();
+
+        return exports;
+      })
+    })();
+/* 
+路径: /系统项目/企业微信合并/entry.js(main)
+ID: 976104190800461826
+AppID: 976104190800461825
+*/
+window.weappEcodesdk.jsonp.require("874575386059980800", "entry.js");
+window.weappEcodesdk.jsonp.require("882251622021660673", "entry.js");
+window.weappEcodesdk.jsonp.require("885194181485584385", "entry.js");
+window.weappEcodesdk.jsonp.require("885200851569795072", "entry.js");
+window.weappEcodesdk.jsonp.require("886320029866319872", "entry.js");
+window.weappEcodesdk.jsonp.require("889758688077004801", "entry.js");
+window.weappEcodesdk.jsonp.require("890383610012876801", "entry.js");
+window.weappEcodesdk.jsonp.require("892259166551203841", "entry.js");
+window.weappEcodesdk.jsonp.require("905439708020178944", "entry.js");
+window.weappEcodesdk.jsonp.require("921561288740765696", "entry.js");
+window.weappEcodesdk.jsonp.require("921979068866691072", "entry.js");
+window.weappEcodesdk.jsonp.require("926880914979651584", "entry.js");
+window.weappEcodesdk.jsonp.require("945008966857244673", "entry.js");
+window.weappEcodesdk.jsonp.require("946617144439865345", "entry.js");
+window.weappEcodesdk.jsonp.require("972762800768303104", "entry.js");
+window.weappEcodesdk.jsonp.require("972893367887699969", "entry.js");
+window.weappEcodesdk.jsonp.require("976104190800461825", "entry.js");
